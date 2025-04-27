@@ -1,0 +1,9 @@
+GET http://gabodevapi.com/ HTTP/1.1
+###
+GET http://gabodevapi.com/api HTTP/1.1
+###
+GET http://gabodevapi.com/api/v1 HTTP/1.1
+
+###
+POST http://gabodev.api/api/v1/new/products HTTP/1.1
+Content-Type: application/json
