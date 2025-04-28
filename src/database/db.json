@@ -39,22 +39,58 @@
   ],
   "products": [
     {
+      "id": 100,
+      "name": "Name Product",
+      "price": "Price",
+      "stock": "Stock Libre"
+    },
+    {
       "id": 101,
-      "name": "Laptop",
-      "price": 1200.99,
-      "stock": 15
+      "name": "Redmi 12 Note",
+      "price": "140$",
+      "stock": "78"
     },
     {
       "id": 102,
-      "name": "Smartphone",
-      "price": 799.49,
-      "stock": 30
+      "name": "Redmi 12 Note Pro",
+      "price": "180$",
+      "stock": "231"
     },
     {
       "id": 103,
-      "name": "Headphones",
-      "price": 199.99,
-      "stock": 50
+      "name": "Redmi 9A",
+      "price": "40$",
+      "stock": "23"
+    },
+    {
+      "id": 104,
+      "name": "Laptop Acer Aspire 3 15",
+      "price": "590$",
+      "stock": "573"
+    },
+    {
+      "id": 105,
+      "name": "Laptop Nitro Aspire 5 15",
+      "price": " 890$",
+      "stock": "324"
+    },
+    {
+      "id": 106,
+      "name": "Redmi 12 Note Pro",
+      "price": "160$",
+      "stock": "67"
+    },
+    {
+      "name": "Redmi 12 Note",
+      "price": "140$",
+      "stock": "78",
+      "id": 107
+    },
+    {
+      "name": "Redmi 12 Note",
+      "price": "140$",
+      "stock": "78",
+      "id": 108
     }
   ],
   "orders": [

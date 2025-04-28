@@ -9,7 +9,6 @@ app.disable('x-powered-by');
 
 // Rutas Modularizadas
 app.use(express.json());
-
 app.use(router);
 
 app.use(handleNotFound);
