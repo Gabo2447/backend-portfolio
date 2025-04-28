@@ -13,7 +13,6 @@ Proyecto inicializado con el propósito de crear un Back-End sencillo para [port
 - [🤝 Contribución](#-contribución)
 - [📜 Licencia](#-licencia)
 - [🔗 Recursos](#-recursos)
-
 ---
 
 ## 📦 Instalación
@@ -32,11 +31,22 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
    ```bash
    npm install
    ```
-4. **Inicia el servidor**:
+4. **Navega al directorio gemini**:
    ```bash
-   npm start
+   cd src/gemini
    ```
-5. **Accede al servidor**: El servidor estará disponible en `http://localhost:3000`.
+5. **Crea keyApiGemini.js y escribe lo siguiente**:
+   ```javascript
+   export const api = 'YOUR_API_KEY';
+   ```
+6. **Inicia el servidor**:
+   ```bash
+   # Para desarrollar y con baja memoria:
+   npm run lowDev
+   # Para desarrollar con alta memoria:
+   npm run Dev
+   ```
+7. **Accede al servidor**: El servidor estará disponible en `http://localhost:3000`.
 
 ---
 

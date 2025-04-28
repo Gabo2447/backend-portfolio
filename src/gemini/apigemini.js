@@ -1,5 +1,5 @@
 import { GoogleGenAI } from '@google/genai';
-import { api } from './keyApigemini.js';
+import { api } from './keyApiGemini.js';
 import picocolors from 'picocolors';
 
 const ai = new GoogleGenAI({ apiKey: api });
