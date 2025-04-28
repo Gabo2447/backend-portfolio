@@ -3,7 +3,7 @@ import { geminiAI } from '../gemini/apigemini.js';
 
 let lastContent = null; // Guarda el último contenido enviado
 
-export const getGemini = async (req, res) => {
+export const getGemini = async(req, res) => {
   try {
     if (
       !lastContent ||
@@ -25,13 +25,13 @@ export const getGemini = async (req, res) => {
   }
 };
 
-export const addGemini = async (req, res) => {
+export const addGemini = async(req, res) => {
   try {
     const { content } = req.body;
 
     if (!content || typeof content !== 'string' || content.trim() === '') {
       return res.status(400).json({
-        message: 'El campo "content" es obligatorio y debe ser texto no vacío',
+        message: 'El campo "content" es obligatorio y debe ser texto no vacío'
       });
     }
 
@@ -43,7 +43,7 @@ export const addGemini = async (req, res) => {
 
     return res.status(201).json({
       message: 'Mensaje enviado con éxito a Gemini',
-      content: resgemini,
+      content: resgemini
     });
   } catch (err) {
     console.error(pc.red('Error al agregar el mensaje:\n'), err);

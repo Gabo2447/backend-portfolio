@@ -34,12 +34,12 @@ describe('Database Path Validation', () => {
 });
 
 describe('Database Operations', () => {
-  test('readData should return valid JSON data', async () => {
+  test('readData should return valid JSON data', async() => {
     const data = await readData();
     expect(typeof data).toBe('object');
   });
 
-  test('writeData should add new data to the database', async () => {
+  test('writeData should add new data to the database', async() => {
     const key = 'testKey';
     const newData = { id: 1, name: 'Test User' };
 

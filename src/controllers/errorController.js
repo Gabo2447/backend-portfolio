@@ -1,4 +1,3 @@
-import pc from 'picocolors';
 import { notFoundMiddleware } from '../middlewares/notFoundMiddleware.js';
 /**
  * Controlador para manejar el error 404.

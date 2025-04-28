@@ -2,7 +2,7 @@
 import pc from 'picocolors';
 import { readData, writeData } from '../utils/database.js';
 
-export const getProducts = async (req, res) => {
+export const getProducts = async(req, res) => {
   try {
     const data = await readData();
     console.log(pc.green('Datos recibidos de productos:\n'), data.products);
@@ -13,7 +13,7 @@ export const getProducts = async (req, res) => {
   }
 };
 
-export const addProducts = async (req, res) => {
+export const addProducts = async(req, res) => {
   try {
     const newProducts = req.body;
     const id = newProducts.id;
@@ -25,7 +25,7 @@ export const addProducts = async (req, res) => {
 
       newProducts.id = newId; // Pushear el id
     } else if (id === data.products[data.products.length - 1].id)
-      newProducts.id++; // Hacer sumar 1 al id
+      {newProducts.id++;} // Hacer sumar 1 al id
 
     await writeData('products', newProducts);
     res
@@ -37,7 +37,7 @@ export const addProducts = async (req, res) => {
   }
 };
 
-export const getProductsId = async (req, res) => {
+export const getProductsId = async(req, res) => {
   try {
     const id = Number(req.params.id); // Convertir a número
 

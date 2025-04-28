@@ -14,13 +14,13 @@ export async function geminiAI(content) {
     contents: [
       {
         parts: [
-          { text: content }, // Aquí va el texto que envías
-        ],
-      },
+          { text: content } // Aquí va el texto que envías
+        ]
+      }
     ],
     config: {
-      temperature: 0.3,
-    },
+      temperature: 0.3
+    }
   });
   console.log(picocolors.green('GEMINI\n'), picocolors.cyan(response.text));
   return response.text;

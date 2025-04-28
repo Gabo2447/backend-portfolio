@@ -2,13 +2,13 @@ import express from 'express';
 import {
   getUsers,
   getUsersId,
-  addUsers,
+  addUsers
 } from '../controllers/userController.js';
 
 import {
   getProducts,
   getProductsId,
-  addProducts,
+  addProducts
 } from '../controllers/productsController.js';
 
 import { getGemini, addGemini } from '../controllers/geminiController.js';

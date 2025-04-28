@@ -2,7 +2,7 @@
 import pc from 'picocolors';
 import { readData } from '../utils/database.js';
 
-export const getRoot = async (req, res) => {
+export const getRoot = async(req, res) => {
   try {
     res.status(200).json({ message: 'Bienvenido a mi página de inicio' });
     console.log(
@@ -15,7 +15,7 @@ export const getRoot = async (req, res) => {
   }
 };
 
-export const getAPI = async (req, res) => {
+export const getAPI = async(req, res) => {
   try {
     const data = await readData();
 
